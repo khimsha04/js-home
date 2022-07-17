@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.time-box{
+    font-size: 30px;
+    background-color:orange;
+    max-width: 100%;
+    width: 250px;
+    height: 60px;
+    padding: 10px;
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    align-items: center;
+    text-align: center;
+    border-width: 2px;
+    border-radius: 50%;
+    border-color: red;
+    border-style: solid;
+}
+.span{
+    position:absolute;
+    top:2%;
+    right: 43%;
+    font-size: 30px;
+}
+.hours{
+    color: blue;
+}
+.minutes{
+    color: green;
+}
+.seconds{
+    color: yellow;
+}
+.session{
+    color: brown;
+}
+.delete{
+    cursor: pointer;
+    position: absolute;
+    top: 23%;
+    left: 45%;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    border-style: none;
+    background-color: black;
+    color:white;
+}
