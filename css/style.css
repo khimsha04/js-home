@@ -50,3 +50,18 @@
     background-color: black;
     color:white;
 }
+@media (max-width : 1024px){
+
+    .span{
+        transform: translate(50%);
+    }
+    .time-box{
+        transform: translate(-25%,-20%);
+    }
+    .delete{
+        transform: translate(-10%);
+
+    }
+}
+     
+   

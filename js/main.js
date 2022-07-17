@@ -21,20 +21,6 @@ setInterval(DisplayTime);
 const clock = document.querySelector('.clock');
 const span = document.querySelector('.span');
 
-const AddClock = document.createElement('div');
-AddClock.innerHTML = `
-        <div class="clock">
-        <div class="time-box">
-        
-            <span class="hours"> 00 </span>
-            <span>:</span>
-            <span class="minutes">00 </span>
-            <span>:</span>
-            <span class="seconds"> 00 </span>
-            <span class="session"> AM </span>
-        </div>
-        </div>
-        `;
 const DeleteButton = document.querySelector('.delete');
 DeleteButton.addEventListener('click', (e) => {
     
@@ -42,7 +28,7 @@ DeleteButton.addEventListener('click', (e) => {
     span.remove();
     DeleteButton.innerHTML = "recover clock";
     
-    AddClock.add();
+   
 });
 
 // console.log(DeleteButton);
