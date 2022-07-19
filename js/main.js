@@ -4,14 +4,7 @@ function DisplayTime() {
     
     const min = dateTime.getMinutes();
     const sec = dateTime.getSeconds();
-    const session = document.querySelector('.session');
     
-   
-    if (hrs <= 12) {
-        session.innerHTML = "AM";
-    } else {
-        session.innerHTML = "PM";
-    }
 
     document.querySelector('.hours').innerHTML = hrs;
     document.querySelector('.minutes').innerHTML = min;
@@ -39,4 +32,3 @@ DeleteButton.addEventListener('click', (e) => {
    
 });
 
-// console.log(DeleteButton);
