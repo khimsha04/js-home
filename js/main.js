@@ -5,6 +5,7 @@ function DisplayTime() {
     const min = dateTime.getMinutes();
     const sec = dateTime.getSeconds();
     const session = document.querySelector('.session');
+    
    
     if (hrs <= 12) {
         session.innerHTML = "AM";
@@ -22,11 +23,18 @@ const clock = document.querySelector('.clock');
 const span = document.querySelector('.span');
 
 const DeleteButton = document.querySelector('.delete');
+const show = document.querySelector('#show');
+
 DeleteButton.addEventListener('click', (e) => {
+    show.classList.toggle('hiden');
+    if (show.classList.contains('hiden')) {
+        
+        DeleteButton.innerHTML = " Recover Clock";
+
+    } else {
+        DeleteButton.innerHTML = "Delete Clock ";
+    }
     
-    clock.remove();
-    span.remove();
-    DeleteButton.innerHTML = "recover clock";
     
    
 });

@@ -26,6 +26,9 @@
     right: 43%;
     font-size: 30px;
 }
+.hiden{
+    display: none;
+}
 .hours{
     color: blue;
 }
